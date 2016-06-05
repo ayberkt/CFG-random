@@ -2,7 +2,7 @@
 
 This is an implementation of a CFG _fuzzer_ in Haskell. It takes the
 representation of a CFG and randomly generates strings that would be accepted by
-the CFG. In (`palindromes/Main.hs`)[palindromes] there is a sample grammar that generates arithmetic expression. To run this:
+the CFG. In [`palindromes/Main.hs`][palindromes] there is a sample grammar that generates arithmetic expression. To run this:
 
 ```
 $ stack build
