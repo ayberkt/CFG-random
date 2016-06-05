@@ -30,5 +30,6 @@ $ for i in `seq 1 20`; do arithmetic; done
 1
 ```
 
+The nice thing is that the CFG implementation does not work with just `String`s but with all `Monoid` instances.
 
 [palindromes]: https://github.com/ayberkt/CFG-fuzzer/blob/master/palindromes/Main.hs
