@@ -5,9 +5,7 @@ module Language.Grammar where
 import System.Random
 
 data CFG s v =
-  CFG { terminals :: [s]
-      , nonterminals :: [v]
-      , productions :: [(v, [Either s v])]
+  CFG { productions :: [(v, [Either s v])]
       , start :: v
       }
 

@@ -7,9 +7,7 @@ import System.Random
 
 arithmetic :: CFG String Char
 arithmetic =
-  CFG { terminals = ["+", "*"]
-      , nonterminals = ['P']
-      , productions =
+  CFG { productions =
           [ 'P' ⟹ [Right 'P', Left  " * " , Right 'P']
           , 'P' ⟹ [Right 'P', Left  " + " , Right 'P']
           , 'P' ⟹ [Right 'P', Left  " + " , Right 'P']

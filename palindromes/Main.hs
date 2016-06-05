@@ -7,9 +7,7 @@ import System.Random
 
 palindromes :: CFG String Char
 palindromes =
-  CFG { terminals = ["0", "1", ""]
-      , nonterminals = ['P']
-      , productions =
+  CFG {  productions =
           [ 'P' ⟹ [Left ""]
           , 'P' ⟹ [Left "0"]
           , 'P' ⟹ [Left "1"]
