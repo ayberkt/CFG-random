@@ -1,6 +1,6 @@
-# CFG-fuzzer
+# CFG-randomizer
 
-This is an implementation of a CFG _fuzzer_ in Haskell. It takes the
+This is an implementation of a CFG _randomizer_ in Haskell. It takes the
 representation of a CFG and randomly generates strings that would be accepted by
 the CFG. In [`palindromes/Main.hs`][palindromes] there is a sample grammar that generates arithmetic expression. To run this:
 
@@ -32,4 +32,4 @@ $ for i in `seq 1 20`; do arithmetic; done
 
 The nice thing is that the CFG implementation does not work with just `String`s but with all `Monoid` instances.
 
-[palindromes]: https://github.com/ayberkt/CFG-fuzzer/blob/master/palindromes/Main.hs
+[palindromes]: https://github.com/ayberkt/CFG-randomizer/blob/master/palindromes/Main.hs
